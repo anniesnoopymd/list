@@ -1,0 +1,100 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  font-family: "Francois One", 微軟正黑體;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #FF3D4A;
+}
+
+.buylist, .top, .control {
+  border: solid 4px #444;
+}
+
+.buylist {
+  display: inline-block;
+  background-color: #f3f3f3;
+  padding: 15px;
+  width: 250px;
+  height: 400px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  letter-spacing: 1px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+}
+.buylist:hover input {
+  width: 50px;
+}
+
+.top {
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  text-valign: middle;
+  margin: -20px -20px 30px -17px;
+  padding-top: 5px;
+  background-color: #FF3D4A;
+  color: #f3f3f3;
+}
+
+.control {
+  margin-top: 40px;
+  padding: 10px;
+  margin: 10px;
+}
+.control input {
+  border: solid 4px #444;
+  margin-right: 14px;
+  width: 80px;
+}
+.control .btn {
+  display: inline-block;
+  margin-top: -2px;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.item {
+  border: solid 4px #444;
+  padding: 10px;
+  margin: 10px;
+  letter-spacing: 3px;
+}
+
+.bottom {
+  border: solid 4px #444;
+  margin: 20px -20px -20px -20px;
+  background-color: #FFC954;
+  letter-spacing: 2px;
+  font-size: 15px;
+  height: 110px;
+  padding: 10px;
+}
+.bottom::before, .bottom::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 48px;
+  background-color: #444;
+  right: 40px;
+  top: -5px;
+  transform: rotate(30deg);
+}
+.bottom::after {
+  right: 30px;
+}
+.bottom hr {
+  border: none;
+  border-bottom: solid 4px #444;
+}
